@@ -1,0 +1,40 @@
+<!-- @format -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="max-w-[900px] mx-auto p-4 flex flex-col">
+    <h1 class="text-[25px] font-[500]">Ordermart's Account Deletion</h1>
+    <label for="" class="text-sm mt-2 mb-1">Select account type</label>
+    <select class="h-[43px] p-2 rounded">
+      <option value="">Vendor account</option>
+      <option value="">User account</option>
+    </select>
+    <label for="" class="text-sm mt-4">Account email address</label>
+    <input
+      type="text"
+      class="outline-none p-3 h-[44px] border border-gray-400 rounded"
+    />
+    <label for="" class="text-sm mt-4">Reason for account deletion</label>
+    <textarea
+      class="p-3 h-[100px] mt-1 rounded resize-none outline-none border border-gray-400"
+    ></textarea>
+
+    <button
+      id="deleteBtn"
+      class="mt-6 h-[50px] rounded bg-orange-500 text-white"
+    >
+      Send deletion request
+    </button>
+
+    <footer class="flex flex-col items-center justify-center mt-[100px] border-t border-gray-300 pt-2">
+      <p class="text-sm text-gray-500">2024 &copy;Ordermart</p>
+      <p class="text-sm text-gray-500 text-center   ">Please note Account deletion may take upto 24 hours</p>
+    </footer>
+  </body>
+</html>
